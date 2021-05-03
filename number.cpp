@@ -7,7 +7,9 @@ int Solution::solve(vector<int> &A, int B, int C) {
         temp/=10;
     }       
             
-    if(count<B){return 0;}
+    
+   if(count<B){return 0;}
+   int ans=0;
     else if(count>B){
         if(A[0]==0){
             ans=(A.size()-1)*pow(A.size(),B-1);
